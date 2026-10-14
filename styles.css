@@ -931,3 +931,6 @@ html[lang="en"] [data-jp] { display: none; }
   .week-heading strong { font-size: 1.2rem; }
   .agenda-item { grid-template-columns: 62px minmax(0, 1fr); padding: 16px; }
 }
+
+/* Lecture flyer inside a schedule entry: keep it a moderate size */
+.entry-flyer { max-width: 360px; margin-top: 16px; }
