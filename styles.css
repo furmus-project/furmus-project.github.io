@@ -105,6 +105,9 @@ h1, h2, h3, h4, p, a, span {
   opacity: 0.9;
 }
 
+/* One line under the header only: the header's own border is kept */
+.site-header + .field-rule { display: none; }
+
 .field-divider {
   border: none;
   height: 1px;
@@ -741,6 +744,30 @@ section { padding: 64px 0; }
 .week-card:nth-child(2) .schedule-date { color: var(--green-deep); }
 
 .schedule-entry h3 { margin-bottom: 7px; }
+
+/* Compact fact list and register button inside a schedule entry */
+.entry-facts {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0 14px;
+}
+.entry-fact {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 10px;
+  font-size: 0.9rem;
+}
+.entry-fact strong {
+  color: var(--blue-deep);
+  font-size: 0.82rem;
+}
+.entry-fact span { color: var(--ink-soft); }
+.entry-register {
+  margin-top: 4px;
+  padding: 10px 18px;
+  font-size: 0.88rem;
+}
+
 .schedule-entry p:last-child { margin-bottom: 0; }
 .schedule-note { margin-top: 18px; font-size: 0.88rem; }
 
