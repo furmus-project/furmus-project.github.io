@@ -414,6 +414,7 @@ section { padding: 64px 0; }
   overflow: hidden;
 }
 .person-photo {
+  display: none; /* photo boxes hidden until photos are ready: delete this line to bring them back */
   aspect-ratio: 4/5;
   background: linear-gradient(160deg, var(--blue) 0%, var(--green) 100%);
 }
